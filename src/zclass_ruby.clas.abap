@@ -1,14 +1,18 @@
-class ZCLASS_RUBY definition
-  public
-  final
-  create public .
+CLASS zclass_ruby DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
-protected section.
-private section.
+  PUBLIC SECTION.
+    INTERFACES if_oo_adt_classrun.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS ZCLASS_RUBY IMPLEMENTATION.
+CLASS zclass_ruby IMPLEMENTATION.
+    METHOD if_oo_adt_classrun~main.
+        out->write( 'Ngoc xinh dep').
+    ENDMETHOD.
 ENDCLASS.
